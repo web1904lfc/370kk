@@ -56,3 +56,4 @@ CREATE TABLE kk_login(
 #功能二:添加二条测试数据 
 INSERT INTO kk_login VALUES(null,'tom',md5('123'));
 INSERT INTO kk_login VALUES(null,'jerry',md5('123'));
+INSERT INTO kk_login VALUES(null,'laoxie',md5('123'));
