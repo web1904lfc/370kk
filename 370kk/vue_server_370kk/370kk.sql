@@ -45,3 +45,14 @@ INSERT INTO movie VALUES(11,'柠檬之青涩记忆','img/index/04458050015616971
 INSERT INTO movie VALUES(12,'放射治疗室特别篇：启程','img/index/0974399001561689001.jpg','7',' 未知','2019-06-28','该剧讲述了洼田正孝饰演的主人公，是坚信X光一定会拍摄出真实病症的诊疗放射线技师，回国后就任于本田翼所工作的甘春综合医院，广濑爱丽丝在剧中饰演十分有活力的新人放射线技师，她一心为患者着想，但经常因为做事不灵巧而白忙活一场。');
 INSERT INTO movie VALUES(13,'潜行者','img/index/0764020001561692601.jpg','1','吕冠南 谭广源','2019-06-28 ','故事开始于卧底警察潜伏黑帮，意外的坐上了黑帮老大的位置，不料被大毒枭设计一步步拖入公海的魔鬼运输船；恰逢此时，一支神秘的第三方部队正在展开他们的复仇之路，命运的纠葛从此开始。在三方力量的角逐中，激烈的搏斗、刀战、枪战、狙击战、遥控炸弹，层层升级步步惊心。在法与情，爱与恨，兄弟和女人之间，有些事情总要有人去做。');
 
+
+#功能一:创建表kk_login 用户登录表
+USE 370kk;
+CREATE TABLE kk_login(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  uname VARCHAR(50),
+  upwd  VARCHAR(32)
+);
+#功能二:添加二条测试数据 
+INSERT INTO kk_login VALUES(null,'tom',md5('123'));
+INSERT INTO kk_login VALUES(null,'jerry',md5('123'));
